@@ -1,0 +1,8 @@
+webrtc/base/platform_thread.cc
+ - ::RaiseExceptio()
+
+webrtc/modules/audio_processing/include/audio_processing.h
+- virtual int StartDebugRecordingForPlatformFile(rtc::PlatformFile)
+
+webrtc/base/checks.cc
+- #if defined(__GLIBCXX__) && !defined(__UCLIBC__) && !defined(WIN32)
